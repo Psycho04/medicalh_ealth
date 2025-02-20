@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:medicalh_ealth/core/auth/auth_screen.dart';
+import 'package:medicalh_ealth/auth/auth_screen.dart';
 
 void main() {
   runApp(const MyApp());
