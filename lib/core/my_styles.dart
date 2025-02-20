@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class TextStyles {
+class MyStyles {
 
   static const TextStyle title48Bluew100 = TextStyle(
     fontSize: 48,

@@ -1,6 +1,5 @@
 class MyText{
-  static const String skin = 'Skin'; 
-  static const String firts = 'Firts';
+  static const String skin = 'Skin\nFirts'; 
   static const String dermatologyCenter = 'Dermatology center';
   static const String lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
   static const String login = 'Log In';
