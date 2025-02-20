@@ -19,4 +19,10 @@ class MyStyles {
     fontWeight: FontWeight.w300,
     color: Colors.white
   );
+
+  static const TextStyle title20Black500 = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.w500,
+    color: Colors.black
+  );
 }

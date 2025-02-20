@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:medicalh_ealth/auth/widget/my_text_btn.dart';
+import 'package:medicalh_ealth/core/my_colors.dart';
 import 'package:medicalh_ealth/core/my_images.dart';
 import 'package:medicalh_ealth/core/my_styles.dart';
 import 'package:medicalh_ealth/core/my_text.dart';
@@ -22,7 +23,7 @@ class AuthScreen extends StatelessWidget {
             Text(MyText.dermatologyCenter,
                 style: MyStyles.title12Blackw300.copyWith(
                     fontWeight: FontWeight.w600,
-                    color: const Color(0xff2260FF))),
+                    color: MyColor.primaryColor)),
             verticalSpacing(50),
             const Text(
               MyText.lorem,
@@ -30,17 +31,19 @@ class AuthScreen extends StatelessWidget {
             ),
             verticalSpacing(30),
             MyTextBtn(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, 'LoginScreen');
+              },
               text: MyText.login,
-              color: const Color(0xff2260FF),
+              color: MyColor.primaryColor,
               textColor: Colors.white,
             ),
             verticalSpacing(10),
             MyTextBtn(
               onTap: () {},
               text: MyText.signUP,
-              color: const Color(0xffCAD6FF),
-              textColor: const Color(0xff2260FF),
+              color: MyColor.secondaryColor,
+              textColor: MyColor.primaryColor,
             ),
           ],
         ),
