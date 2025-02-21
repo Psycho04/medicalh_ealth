@@ -19,11 +19,28 @@ class AuthScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SvgPicture.asset(MyImages.appLogo),
-            const Text(MyText.skin, style: MyStyles.title48Bluew100),
-            Text(MyText.dermatologyCenter,
-                style: MyStyles.title12Blackw300.copyWith(
-                    fontWeight: FontWeight.w600,
-                    color: MyColor.primaryColor)),
+            const SizedBox(
+              height: 120,
+              width: 100,
+              child: Column(
+                children: [
+                  Expanded(
+                    child: Text(
+                      MyText.skin,
+                      style: MyStyles.title48Bluew100,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            verticalSpacing(10),
+            Text(
+              MyText.dermatologyCenter,
+              style: MyStyles.title12Blackw300.copyWith(
+                fontWeight: FontWeight.w600,
+                color: MyColor.primaryColor,
+              ),
+            ),
             verticalSpacing(50),
             const Text(
               MyText.lorem,
@@ -40,7 +57,9 @@ class AuthScreen extends StatelessWidget {
             ),
             verticalSpacing(10),
             MyTextBtn(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, 'signupScreen');
+              },
               text: MyText.signUP,
               color: MyColor.secondaryColor,
               textColor: MyColor.primaryColor,

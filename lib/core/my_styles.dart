@@ -11,7 +11,7 @@ class MyStyles {
   static const TextStyle title12Blackw300 = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w300,
-    color: Color(0xff070707)
+    color: Colors.black
   );
 
   static const TextStyle title24Whitew300 = TextStyle(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:medicalh_ealth/auth/auth_screen.dart';
 import 'package:medicalh_ealth/auth/login_screen.dart';
+import 'package:medicalh_ealth/auth/signup_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
       routes: {
         'AuthScreen': (context) => const AuthScreen(),
         'LoginScreen': (context) => LoginScreen(),
+        'signupScreen': (context) => const SignupScreen(),
       },
     );
   }
