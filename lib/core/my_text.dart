@@ -1,5 +1,5 @@
 class MyText{
-  static const String skin = 'Skin\nFirts'; 
+  static const String skin = 'Skin\nFirts';
   static const String dermatologyCenter = 'Dermatology center';
   static const String lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
   static const String login = 'Log In';
@@ -12,10 +12,10 @@ class MyText{
   static const String password = 'Password';
   static const String forgetPassword = 'Forget Password';
   static const String or = 'or';
-  static const String dontHaveAccount = 'Don’t have an account?';
+  static const String dontHaveAccount = 'Dont have an account?';
   static const String newAccount = 'New Account';
   static const String fullName = 'Full name';
-  static const String email = 'Email'; 
+  static const String email = 'Email';
   static const String mobileNumber = 'Mobile Number';
   static const String dateOfBirth = 'Date of birth';
   static const String byContinuing = 'By continuing, you agree to ';
@@ -26,4 +26,22 @@ class MyText{
   static const String setPassword = 'Set Password';
   static const String confirmPassword  = 'Confirm Password';
   static const String createNewPassword  = 'Create new password';
+  static const String welcomeBack  = 'Hi, WelcomeBack';
+  static const String johnDoe = 'John Doe';
+  static const String doctors = 'Doctors';
+  static const String favorite = 'Favorite';
+  static const String wednesday = 'Wednesday';
+  static const String today = 'Today';
+  static const String treatmentAnd = 'Treatment and prevention of skin and photodermatitis.';
+  static const String dr = 'Dr.';
+  static const String oliviaTurner = 'Olivia Turner';
+  static const String md = 'M.D.';
+  static const String dermatoEndocrinology = 'Dermato-Endocrinology';
+  static const String dermatoGenetics = 'Dermato-Genetics';
+  static const String alexanderBennett = 'Alexander Bennett';
+  static const String phd = 'Ph.D.';
+  static const String sophiaMartinez = 'Sophia Martinez';
+  static const String cosmeticBioengineering = 'Cosmetic Bioengineering';
+  static const String michaelDavidson = 'Michael Davidson';
+  static const String nanoDermatology = 'Nano-Dermatology';
 }

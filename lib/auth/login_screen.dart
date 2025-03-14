@@ -33,12 +33,12 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              verticalSpacing(50),
+              vSpace(50),
               Text(MyText.welcome,
                   style: MyStyles.title24Whitew300.copyWith(
                       color: MyColor.primaryColor,
                       fontWeight: FontWeight.w600)),
-              verticalSpacing(50),
+              vSpace(50),
               TextFieldWithName(
                 text: MyText.emailOrMobile,
                 hintText: MyText.example,
@@ -82,7 +82,7 @@ class LoginScreen extends StatelessWidget {
                   )
                 ],
               ),
-              verticalSpacing(50),
+              vSpace(50),
               Center(
                 child: Column(
                   children: [
@@ -91,16 +91,16 @@ class LoginScreen extends StatelessWidget {
                         text: MyText.login,
                         color: MyColor.primaryColor,
                         textColor: Colors.white),
-                    verticalSpacing(20),
+                    vSpace(20),
                     const Text(MyText.or, style: MyStyles.title12Blackw300),
-                    verticalSpacing(20),
+                    vSpace(20),
                     /* حط الايكون هنا */
-                    verticalSpacing(35),
+                    vSpace(35),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         const Text(MyText.dontHaveAccount),
-                        horizontalSpacing(5),
+                        hSpace(5),
                         InkWell(
                           onTap: () {
                             Navigator.push(

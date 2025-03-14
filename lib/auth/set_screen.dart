@@ -28,7 +28,7 @@ class SetScreen extends StatelessWidget {
               MyText.lorem,
               style: MyStyles.title12Blackw300,
             ),
-            verticalSpacing(50),
+            vSpace(50),
             TextFieldWithName(
               text: MyText.password,
               hintText: MyText.dots,
@@ -59,7 +59,7 @@ class SetScreen extends StatelessWidget {
                 icon: const Icon(Icons.remove_red_eye),
               ),
             ),
-            verticalSpacing(30),
+            vSpace(30),
             MyTextBtn(
               onTap: () {},
               text: MyText.createNewPassword,
