@@ -4,6 +4,7 @@ import 'package:medicalh_ealth/core/my_styles.dart';
 import 'package:medicalh_ealth/core/my_text.dart';
 import 'package:medicalh_ealth/core/spacing.dart';
 import 'package:medicalh_ealth/feature/doctors/widget/custom_app_bar.dart';
+import 'package:medicalh_ealth/feature/doctors/widget/custom_row.dart';
 import 'package:medicalh_ealth/feature/home/widget/bottom_nav_bar.dart';
 
 class DoctorInfo extends StatelessWidget {
@@ -33,81 +34,7 @@ class DoctorInfo extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                children: [
-                  const Text(MyText.sortBy),
-                  hSpace(5),
-                  InkWell(
-                    onTap: () {},
-                    child: Container(
-                      width: 60,
-                      height: 25,
-                      decoration: BoxDecoration(
-                        color: MyColor.primaryColor,
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: const Center(
-                        child: Text(
-                          MyText.sort,
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ),
-                    ),
-                  ),
-                  hSpace(5),
-                  InkWell(
-                    onTap: () {},
-                    child: const CircleAvatar(
-                      radius: 13,
-                      backgroundColor: MyColor.secondaryColor,
-                      child: Icon(
-                        Icons.star_border_outlined,
-                        color: MyColor.primaryColor,
-                        size: 18,
-                      ),
-                    ),
-                  ),
-                  hSpace(5),
-                  InkWell(
-                    onTap: () {},
-                    child: const CircleAvatar(
-                      radius: 13,
-                      backgroundColor: MyColor.secondaryColor,
-                      child: Icon(
-                        Icons.favorite_outline,
-                        color: MyColor.primaryColor,
-                        size: 18,
-                      ),
-                    ),
-                  ),
-                  hSpace(5),
-                  InkWell(
-                    onTap: () {},
-                    child: const CircleAvatar(
-                      radius: 13,
-                      backgroundColor: MyColor.secondaryColor,
-                      child: Icon(
-                        Icons.female,
-                        color: MyColor.primaryColor,
-                        size: 18,
-                      ),
-                    ),
-                  ),
-                  hSpace(5),
-                  InkWell(
-                    onTap: () {},
-                    child: const CircleAvatar(
-                      radius: 13,
-                      backgroundColor: MyColor.secondaryColor,
-                      child: Icon(
-                        Icons.male,
-                        color: MyColor.primaryColor,
-                        size: 18,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+              const CustomRow(currentPage: MyText.doctors),
               vSpace(10),
               Container(
                 padding:

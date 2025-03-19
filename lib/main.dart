@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:medicalh_ealth/feature/doctors/doctors.dart';
+import 'package:medicalh_ealth/feature/home/home.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Medical Health',
-      home: Doctors(),
+      home: Home(),
     );
   }
 }

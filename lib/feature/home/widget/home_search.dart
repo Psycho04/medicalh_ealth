@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:medicalh_ealth/core/my_colors.dart';
 import 'package:medicalh_ealth/core/spacing.dart';
 import 'package:medicalh_ealth/feature/doctors/doctors.dart';
+import 'package:medicalh_ealth/feature/doctors/favorite.dart';
 
 class HomeSearch extends StatelessWidget {
   const HomeSearch({super.key});
@@ -23,7 +24,11 @@ class HomeSearch extends StatelessWidget {
           ),
         ),
         IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return const Favorite();
+            },));
+          },
           icon: const Icon(
             size: 30,
             Icons.favorite_outline,

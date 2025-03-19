@@ -6,40 +6,40 @@ import 'package:medicalh_ealth/feature/doctors/widget/custom_row.dart';
 import 'package:medicalh_ealth/feature/doctors/widget/doctors_sort.dart';
 import 'package:medicalh_ealth/feature/home/widget/bottom_nav_bar.dart';
 
-class Doctors extends StatelessWidget {
-  const Doctors({super.key});
+class Male extends StatelessWidget {
+  const Male({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(title: MyText.doctors),
+      appBar: const CustomAppBar(title: MyText.male),
       bottomNavigationBar: const BottomNavBar(),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
           child: Column(
             children: [
-              const CustomRow(currentPage: MyText.doctors),
+              const CustomRow(currentPage: MyText.male),
               vSpace(20),
               const DoctorsSort(
                 doctorName: MyText.alexanderBennett,
-                specialty: MyText.dermatoGenetics,
                 department: MyText.phd,
+                specialty: MyText.dermatoGenetics,
               ),
               const DoctorsSort(
                 doctorName: MyText.michaelDavidson,
+                department: MyText.md,
                 specialty: MyText.solarDermatology,
-                department: MyText.md,
               ),
               const DoctorsSort(
-                doctorName: MyText.oliviaTurner,
-                specialty: MyText.dermatoEndocrinology,
-                department: MyText.md,
-              ),
-              const DoctorsSort(
-                doctorName: MyText.sophiaMartinez,
-                specialty: MyText.cosmeticBioengineering,
+                doctorName: MyText.alexanderBennett,
                 department: MyText.phd,
+                specialty: MyText.dermatoGenetics,
+              ),
+              const DoctorsSort(
+                doctorName: MyText.michaelDavidson,
+                department: MyText.md,
+                specialty: MyText.solarDermatology,
               ),
             ],
           ),
