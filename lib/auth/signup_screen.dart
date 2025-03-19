@@ -7,7 +7,6 @@ import 'package:medicalh_ealth/core/my_text.dart';
 import 'package:medicalh_ealth/core/spacing.dart';
 
 class SignupScreen extends StatelessWidget {
-  static const routeName = 'signupScreen';
   const SignupScreen({super.key});
 
   @override

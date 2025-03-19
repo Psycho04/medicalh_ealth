@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:medicalh_ealth/auth/auth_screen.dart';
-import 'package:medicalh_ealth/auth/login_screen.dart';
-import 'package:medicalh_ealth/auth/signup_screen.dart';
-import 'package:medicalh_ealth/feature/home/home.dart';
+import 'package:medicalh_ealth/feature/doctors/doctors.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -12,16 +9,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Medical Health',
-      home: const Home(),
-      //initialRoute: 'AuthScreen',
-      routes: {
-        'AuthScreen': (context) => const AuthScreen(),
-        'LoginScreen': (context) => LoginScreen(),
-        'signupScreen': (context) => const SignupScreen(),
-      },
+      home: Doctors(),
     );
   }
 }

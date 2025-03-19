@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:medicalh_ealth/auth/login_screen.dart';
+import 'package:medicalh_ealth/auth/signup_screen.dart';
 import 'package:medicalh_ealth/auth/widget/my_text_btn.dart';
 import 'package:medicalh_ealth/core/my_colors.dart';
 import 'package:medicalh_ealth/core/my_images.dart';
@@ -49,7 +51,11 @@ class AuthScreen extends StatelessWidget {
             vSpace(30),
             MyTextBtn(
               onTap: () {
-                Navigator.pushNamed(context, 'LoginScreen');
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return LoginScreen();
+                  },
+                ));
               },
               text: MyText.login,
               color: MyColor.primaryColor,
@@ -58,7 +64,11 @@ class AuthScreen extends StatelessWidget {
             vSpace(10),
             MyTextBtn(
               onTap: () {
-                Navigator.pushNamed(context, 'signupScreen');
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return const SignupScreen();
+                  },
+                ));
               },
               text: MyText.signUP,
               color: MyColor.secondaryColor,

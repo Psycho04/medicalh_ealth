@@ -8,9 +8,9 @@ import 'package:medicalh_ealth/core/my_styles.dart';
 import 'package:medicalh_ealth/core/my_text.dart';
 import 'package:medicalh_ealth/core/spacing.dart';
 
+
 // ignore: must_be_immutable
 class LoginScreen extends StatelessWidget {
-  static const String routeName = 'LoginScreen';
   LoginScreen({super.key});
 
   GlobalKey<FormState> formKey = GlobalKey();
