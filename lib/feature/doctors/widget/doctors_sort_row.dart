@@ -4,11 +4,11 @@ import 'package:medicalh_ealth/core/my_text.dart';
 import 'package:medicalh_ealth/core/spacing.dart';
 import 'package:medicalh_ealth/feature/doctors/doctor_info.dart';
 
-class DoctorsInfoRow extends StatelessWidget {
+class DoctorsSortRow extends StatelessWidget {
   final String doctorName;
   final String specialty;
   final String department;
-  const DoctorsInfoRow(
+  const DoctorsSortRow(
       {super.key,
       required this.doctorName,
       required this.specialty,

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:medicalh_ealth/core/my_colors.dart';
 import 'package:medicalh_ealth/core/my_text.dart';
 import 'package:medicalh_ealth/core/spacing.dart';
-import 'package:medicalh_ealth/feature/doctors/widget/doctors_info_row.dart';
+import 'package:medicalh_ealth/feature/doctors/widget/doctors_sort_row.dart';
 
 class RatingCard extends StatelessWidget {
   final String doctorName;
@@ -101,7 +101,7 @@ class RatingCard extends StatelessWidget {
                 ],
               ),
               vSpace(5),
-              DoctorsInfoRow(
+              DoctorsSortRow(
                   doctorName: doctorName,
                   specialty: specialty,
                   department: department)
