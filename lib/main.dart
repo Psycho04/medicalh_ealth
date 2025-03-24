@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:medicalh_ealth/feature/doctors/providers/favorites_provider.dart';
 import 'package:medicalh_ealth/feature/home/home.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,10 +12,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Medical Health',
-      home: Home(),
+    return ChangeNotifierProvider(
+      create: (_) => FavoritesProvider(),
+      child: const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Medical Health',
+        home: Home(),
+      ),
     );
   }
 }

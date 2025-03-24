@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:medicalh_ealth/core/my_colors.dart';
 import 'package:medicalh_ealth/core/my_text.dart';
 import 'package:medicalh_ealth/core/spacing.dart';
@@ -38,8 +39,11 @@ class DoctorCard extends StatelessWidget {
             child: Row(
               children: [
                 CircleAvatar(
-                  backgroundImage: AssetImage(imagePath),
                   radius: 40,
+                  child: SvgPicture.asset(
+                    imagePath,
+                    fit: BoxFit.cover,
+                  ),
                 ),
                 hSpace(12),
                 Column(

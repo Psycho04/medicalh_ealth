@@ -30,7 +30,7 @@ class CustomRow extends StatelessWidget {
         hSpace(5),
         InkWell(
           onTap: () {
-            Navigator.push(context, MaterialPageRoute(
+            Navigator.pushReplacement(context, MaterialPageRoute(
               builder: (context) {
                 return const Doctors();
               },
@@ -54,7 +54,7 @@ class CustomRow extends StatelessWidget {
         hSpace(5),
         InkWell(
           onTap: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) {
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
               return const Rating();
             }));
           },
@@ -71,7 +71,7 @@ class CustomRow extends StatelessWidget {
         hSpace(5),
         InkWell(
           onTap: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) {
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
               return const Favorite();
             }));
           },
@@ -88,7 +88,7 @@ class CustomRow extends StatelessWidget {
         hSpace(5),
         InkWell(
           onTap: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) {
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
               return const Female();
             }));
           },
@@ -105,7 +105,7 @@ class CustomRow extends StatelessWidget {
         hSpace(5),
         InkWell(
           onTap: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) {
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
               return const Male();
             }));
           },

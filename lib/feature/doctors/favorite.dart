@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:medicalh_ealth/core/my_colors.dart';
 import 'package:medicalh_ealth/core/my_text.dart';
 import 'package:medicalh_ealth/core/spacing.dart';
+import 'package:medicalh_ealth/feature/doctors/providers/favorites_provider.dart';
 import 'package:medicalh_ealth/feature/doctors/widget/custom_app_bar.dart';
 import 'package:medicalh_ealth/feature/doctors/widget/custom_row.dart';
 import 'package:medicalh_ealth/feature/doctors/widget/favorite_card.dart';
 import 'package:medicalh_ealth/feature/doctors/widget/services_container.dart';
 import 'package:medicalh_ealth/feature/home/widget/bottom_nav_bar.dart';
+import 'package:provider/provider.dart';
 
 class Favorite extends StatefulWidget {
   const Favorite({super.key});
@@ -90,29 +92,33 @@ class _FavoriteState extends State<Favorite> {
               ),
               vSpace(10),
               isDoctorsSelected
-                  ? const Column(
-                      children: [
-                        FavoriteCard(
-                          doctorName: MyText.oliviaTurner,
-                          department: MyText.md,
-                          specialty: MyText.dermatoEndocrinology,
-                        ),
-                        FavoriteCard(
-                          doctorName: MyText.alexanderBennett,
-                          department: MyText.phd,
-                          specialty: MyText.dermatoGenetics,
-                        ),
-                        FavoriteCard(
-                          doctorName: MyText.sophiaMartinez,
-                          department: MyText.phd,
-                          specialty: MyText.cosmeticBioengineering,
-                        ),
-                        FavoriteCard(
-                          doctorName: MyText.michaelDavidson,
-                          department: MyText.md,
-                          specialty: MyText.solarDermatology,
-                        ),
-                      ],
+                  ? Consumer<FavoritesProvider>(
+                      builder: (context, favoritesProvider, child) {
+                        final favorites = favoritesProvider.favorites;
+                        if (favorites.isEmpty) {
+                          return SizedBox(
+                            height: MediaQuery.of(context).size.height * 0.5,
+                            child: const Center(
+                              child: Text(
+                                'No favorite doctors yet',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: MyColor.primaryColor,
+                                ),
+                              ),
+                            ),
+                          );
+                        }
+                        return Column(
+                          children: favorites
+                              .map((doctor) => FavoriteCard(
+                                    doctorName: doctor.name,
+                                    department: doctor.department,
+                                    specialty: doctor.specialty,
+                                  ))
+                              .toList(),
+                        );
+                      },
                     )
                   : const Column(
                       children: [

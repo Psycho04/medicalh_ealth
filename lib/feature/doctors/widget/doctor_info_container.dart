@@ -57,9 +57,17 @@ class DoctorInfoContainer extends StatelessWidget {
             ),
           ),
           vSpace(10),
-          const DoctorInfoRow(),
+          DoctorInfoRow(
+            doctorName: doctorName,
+            specialty: specialty,
+            department: department,
+          ),
           vSpace(10),
-          const DoctorInfoScheduleRow()
+          DoctorInfoScheduleRow(
+            doctorName: doctorName,
+            specialty: specialty,
+            department: department,
+          )
         ],
       ),
     );
