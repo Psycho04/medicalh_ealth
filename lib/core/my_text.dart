@@ -70,4 +70,21 @@ class MyText {
   static const String female = 'Female';
   static const String male = 'Male';
   static const String servicesLorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque congue lorem, vel tincidunt tortor placerat a. Proin ac diam quam. Aenean in sagittis magna, ut feugiat diam.';
+  static const String chat = 'Chat';
+  static const String calendar = 'Calendar';
+  static const String home = 'Home';
+  static const String myProfile = 'My Profile';
+  static const String paymentMethod = 'Payment Method';
+  static const String privacyPolicy = 'Privacy Policy';
+  static const String settings = 'Settings';
+  static const String help = 'Help';
+  static const String logout = 'Logout';
+  static const String notificationSetting = 'Notification Setting';
+  static const String passwordManager = 'Password Manager';
+  static const String deleteAccount = 'Delete Account';
+  static const String phoneNumber = 'Phone Number';
+  static const String updateProfile = 'Update Profile';
+  static const String phoneExample = '+123 567 89000';
+  static const String emailExample = 'johndoe@example.com';
+  static const String dateFormat = 'DD / MM / YYY';
 }
